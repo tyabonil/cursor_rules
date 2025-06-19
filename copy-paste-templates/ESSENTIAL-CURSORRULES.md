@@ -11,6 +11,7 @@
 
 # 🚨 LEVEL 2: WORKFLOW (MANDATORY)  
 - ✅ ALWAYS use mcp_github_* tools instead of terminal git commands
+- ✅ ALWAYS prefer Linux/POSIX terminals (bash, zsh, WSL) over PowerShell
 - ✅ IMMEDIATELY assign blocked issues to repository owner
 - ✅ CREATE issues for all work (≤7 days each)
 - ✅ NEVER attempt infrastructure/DevOps work - assign to user
@@ -46,6 +47,7 @@
 - [ ] Not committing secrets? (STOP if yes)
 - [ ] Not overwriting .env? (ASK if yes)  
 - [ ] Using MCP GitHub API? (REQUIRED)
+- [ ] Using Linux/POSIX terminal when possible? (REQUIRED)
 - [ ] Is work blocked? (ASSIGN if yes)
 - [ ] Issue exists? (CREATE if no)
 - [ ] Tests written? (REQUIRED)
@@ -55,6 +57,7 @@
 
 - ✅ 0 security incidents
 - ✅ 0 workflow tool failures  
+- ✅ 0 terminal hanging issues
 - ✅ 100% issue tracking
 - ✅ 100% test coverage
 - ✅ 100% review compliance

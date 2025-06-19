@@ -36,6 +36,17 @@
 - 🚨 FAILURE = Try MCP tool first, terminal git only as last resort
 ```
 
+### 🐧 **ALWAYS PREFER LINUX/POSIX TERMINALS**
+```markdown
+# TERMINAL PREFERENCE RULES (LEVEL 2 - MANDATORY)
+- ✅ ALWAYS prefer Linux/POSIX terminals (bash, zsh, WSL Ubuntu) over PowerShell
+- ✅ Use WSL Ubuntu when available on Windows systems
+- ✅ Append | cat to commands that might use pagers (git log, git diff)
+- ✅ Use non-interactive flags: --yes, --quiet, --no-pager
+- ❌ AVOID PowerShell for development commands (hanging issues, PSReadLine errors)
+- 🚨 FAILURE = PowerShell hanging, terminal automation failures
+```
+
 ### 🚧 **IMMEDIATELY ASSIGN BLOCKED ISSUES**
 ```markdown
 # BLOCKED ISSUE ASSIGNMENT (LEVEL 2 - MANDATORY)
@@ -121,6 +132,7 @@
 - [ ] Will this commit secrets? (LEVEL 1 - STOP if yes)
 - [ ] Will this overwrite environment files? (LEVEL 1 - ASK if yes)
 - [ ] Should I use MCP GitHub API instead of terminal git? (LEVEL 2 - YES)
+- [ ] Am I using Linux/POSIX terminal when possible? (LEVEL 2 - YES)
 - [ ] Is this work blocked and should be assigned? (LEVEL 2 - ASSIGN if yes)
 - [ ] Is there an issue for this work? (LEVEL 2 - CREATE if no)
 
@@ -132,6 +144,7 @@
 ### **Success Indicators:**
 - ✅ 0 security incidents (Level 1 compliance)
 - ✅ 0 workflow failures (Level 2 compliance)
+- ✅ 0 terminal hanging issues (Level 2 compliance)
 - ✅ 100% quality gate passage (Level 3 compliance)
 - ✅ Clean, maintainable codebase (Level 4 compliance)
 
