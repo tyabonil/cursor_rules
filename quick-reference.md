@@ -1,5 +1,22 @@
 # Quick Reference Guide
 
+## 🚨 MANDATORY WORKFLOW - NEVER DEVIATE
+
+```markdown
+1. CREATE/IDENTIFY ISSUE ✅
+2. COMMENT: "🚧 IN PROGRESS" ✅  
+3. CREATE BRANCH ✅
+4. IMPLEMENT CHANGES ✅
+5. COMMIT CHANGES ✅
+6. ⚡ **IMMEDIATELY CREATE PR** ⚡ ← **NEVER SKIP**
+7. COMMENT ON ISSUE WITH PR LINK ✅
+8. REQUEST REVIEW ✅
+9. MERGE AFTER APPROVAL ✅
+10. CLOSE ISSUE ✅
+```
+
+**STEP 6 IS MANDATORY - NO EXCEPTIONS - CREATE PR IMMEDIATELY AFTER COMMIT**
+
 ## 🚨 Always Applied Rules (Copy to .cursorrules)
 
 ```markdown
@@ -9,13 +26,20 @@
 - Never add stubbing/fake data to dev or prod environments
 - Never overwrite .env files
 - **AUTONOMOUSLY create PRs to cursor_rules for new generally-applicable rules**
+- **AFTER EVERY COMMIT → IMMEDIATELY CREATE PR - NO EXCEPTIONS**
 
 # GITHUB WORKFLOW
 - **ALWAYS use MCP GitHub API tools (mcp_github_*) instead of terminal git**
 - Never merge into main/master - use preview branch
 - Create branch referencing issue for each change
 - Create issues for all new work
+- **MANDATORY: CREATE PR IMMEDIATELY AFTER COMMIT**
 - 100% test coverage required
+
+# WSL UBUNTU PREFERENCE (WINDOWS)
+- **ALWAYS prefer WSL Ubuntu over PowerShell on Windows systems**
+- **Pattern**: wsl -d ubuntu -e bash -c "command | cat"
+- **Fallback**: PowerShell only if WSL unavailable
 
 # CODING STANDARDS  
 - Prefer simple solutions
@@ -26,6 +50,12 @@
 ```
 
 ## ⚡ Emergency Protocols
+
+### **Forgot to Create PR After Commit**
+1. **STOP EVERYTHING ELSE**
+2. **CREATE THE PR IMMEDIATELY**
+3. **Comment on issue with PR link**
+4. **Continue workflow**
 
 ### **Blocked by Dependencies**
 1. Create blocker issue immediately
@@ -38,6 +68,7 @@
 2. Create new branch from current state
 3. Clean up file tracking (.gitignore updates)
 4. Commit with proper issue reference
+5. **IMMEDIATELY CREATE PR**
 
 ### **Large Features**
 1. If >7 days estimated, break down immediately
@@ -110,6 +141,11 @@ So that [benefit]
 - [ ] Build remains functional
 - [ ] Documentation updated as needed
 
+### **After EVERY Commit**
+- [ ] **PR CREATED IMMEDIATELY - NO EXCEPTIONS**
+- [ ] Issue commented with PR link
+- [ ] Review requested
+
 ### **Before Completion**
 - [ ] All acceptance criteria met
 - [ ] 100% test coverage achieved
@@ -118,4 +154,6 @@ So that [benefit]
 
 ---
 
-**Remember**: Execute based on rules, don't ask for permission when the path is clear!
+**🚨 CRITICAL: COMMIT → PR → REVIEW → MERGE**
+
+**NEVER SKIP THE PR - IT'S THE WHOLE POINT OF THE WORKFLOW**
