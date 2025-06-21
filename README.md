@@ -14,6 +14,39 @@ Complete rule hierarchy with clear enforcement levels:
 ### **⚡ QUICK START: [copy-paste-templates/ESSENTIAL-CURSORRULES.md](copy-paste-templates/ESSENTIAL-CURSORRULES.md)**
 Simplified template focusing only on the most critical rules - copy this to your `.cursorrules` file for immediate protection.
 
+### **🤖 LLM-OPTIMIZED: [RULES-LLM-OPTIMIZED.md](RULES-LLM-OPTIMIZED.md)**
+**Ultra-condensed, structured rules for LLM agents** - 4x smaller than full repo while maintaining 100% rule coverage.
+
+### **🧠 AGENTIC LLM BEHAVIORAL RULES: [agentic-llm-behavioral-rules.md](agentic-llm-behavioral-rules.md)**
+**Model-specific guidelines for optimal coding assistance** - addresses unique behavioral patterns, strengths, and idiosyncrasies of major agentic coding LLMs (Claude, GPT-4/o3, Gemini, DeepSeek, Codestral).
+
+---
+
+## 🧠 LLM Tokenization Strategy
+
+### **When to Use Tokenized Rules vs Full Repository:**
+
+**✅ Use [RULES-LLM-OPTIMIZED.md](RULES-LLM-OPTIMIZED.md) for:**
+- **Claude** (all versions) - Excels at structured parsing, handles checksums well
+- **GPT-4/4o** - Benefits from condensed format due to context window constraints  
+- **Cursor AI** - Reduces autocomplete clutter, improves rule adherence
+- **Initial project onboarding** - Fast rule ingestion without cognitive overload
+- **Memory-constrained scenarios** - When full repo exceeds context limits
+- **Rule validation/checking** - Quick reference during development
+
+**✅ Use Full Repository for:**
+- **Complex implementation planning** - When detailed examples and context are needed
+- **Rule development/modification** - When understanding rule evolution and rationale
+- **Training scenarios** - When learning rule patterns and best practices
+- **Cline** - Model-agnostic tool benefits from comprehensive examples
+
+### **Tokenization Approach:**
+- **4x compression ratio** - 15KB → 3.7KB while preserving all mandatory requirements
+- **Structured parsing** - Uses consistent `KEY: value | action` patterns for LLM pattern-matching
+- **Trigger-based enforcement** - Clear conditional logic (`TRIGGER: condition → action`)
+- **Hierarchical priority** - Parse order optimized for critical-first rule application
+- **Checklist format** - Actionable checkboxes for systematic validation
+
 ---
 
 ## 🎯 Rule Philosophy - **≤7 Day Increments**
@@ -42,6 +75,7 @@ AI assistants should execute based on rules, not ask for permission when the pat
 ### **🔧 Implementation Guides**
 - **[priority-driven-issue-management.md](priority-driven-issue-management.md)** - Issue breakdown and dependency management
 - **[environment-variables-management.md](environment-variables-management.md)** - Security and configuration management
+- **[agentic-llm-behavioral-rules.md](agentic-llm-behavioral-rules.md)** - Model-specific behavioral guidelines for major agentic coding LLMs
 - **[workflow/](workflow/)** - Complete workflow patterns and protocols
 
 ### **📋 Ready-to-Use Templates**
